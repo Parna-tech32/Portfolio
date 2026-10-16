@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>RWJO | Reputation-Weighted Jury Oracle</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="topbar">
+
+    <div class="brand">
+
+      <div class="logo">
+        RW
+      </div>
+
+      <div>
+        <h1>RWJO</h1>
+        <p>Reputation-Weighted Jury Oracle</p>
+      </div>
+
+    </div>
+
+    <div class="header-right">
+
+      <div class="network">
+        <span class="network-dot"></span>
+        ANVIL LOCAL
+      </div>
+
+      <button
+        class="connect-btn"
+        onclick="connect()"
+      >
+        Connect Wallet
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div>
+
+        <div class="eyebrow">
+          DECENTRALIZED ORACLE INFRASTRUCTURE
+        </div>
+
+        <h2>
+          Resolve disputed data with
+          <span>reputation-weighted jurors.</span>
+        </h2>
+
+        <p class="hero-text">
+          RWJO combines juror reputation, bonded stake,
+          commit-reveal voting and deviation protection
+          to produce a resilient oracle resolution.
+        </p>
+
+      </div>
+
+      <div class="hero-badge">
+
+        <div class="pulse"></div>
+
+        <div>
+          <strong>ORACLE ONLINE</strong>
+          <small>Local blockchain connected</small>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= STAT CARDS ================= -->
+
+    <section class="stats">
+
+      <div class="stat-card">
+
+        <div class="stat-label">
+          ORACLE STATUS
+        </div>
+
+        <div
+          class="stat-value green"
+          id="oracleStatus"
+        >
+          RESOLVED
+        </div>
+
+        <div class="stat-description">
+          Current oracle state
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-label">
+          CURRENT PRICE
+        </div>
+
+        <div
+          class="stat-value"
+          id="currentPrice"
+        >
+          $1,000
+        </div>
+
+        <div class="stat-description">
+          Latest resolved value
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-label">
+          REFERENCE PRICE
+        </div>
+
+        <div
+          class="stat-value"
+          id="referencePrice"
+        >
+          $1,000
+        </div>
+
+        <div class="stat-description">
+          Deviation reference
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-label">
+          DISPUTE ROUNDS
+        </div>
+
+        <div
+          class="stat-value"
+          id="disputeCount"
+        >
+          0
+        </div>
+
+        <div class="stat-description">
+          On-chain rounds
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ACTIVE DISPUTE ================= -->
+
+    <section class="panel">
+
+      <div class="panel-header">
+
+        <div>
+
+          <div class="section-tag">
+            LIVE ORACLE ACTIVITY
+          </div>
+
+          <h2>
+            Active Dispute
+          </h2>
+
+        </div>
+
+        <div class="round-badge">
+          ROUND #1
+        </div>
+
+      </div>
+
+
+      <!-- PRICE COMPARISON -->
+
+      <div class="resolution-box">
+
+        <div class="price-column">
+
+          <span>
+            CANDIDATE PRICE
+          </span>
+
+          <strong id="candidatePrice">
+            $1,000
+          </strong>
+
+          <small>
+            Submitted oracle value
+          </small>
+
+        </div>
+
+
+        <div class="resolution-arrow">
+
+          <div class="arrow-line"></div>
+
+          <div class="arrow-head">
+            →
+          </div>
+
+        </div>
+
+
+        <div class="price-column resolved-price">
+
+          <span>
+            RESOLVED PRICE
+          </span>
+
+          <strong id="resolvedPrice">
+            $1,000
+          </strong>
+
+          <small>
+            Reputation-weighted result
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= JURORS ================= -->
+
+      <div class="subsection-header">
+
+        <div>
+
+          <h3>
+            Jury Participation
+          </h3>
+
+          <p>
+            Votes are weighted by bond and vested reputation.
+          </p>
+
+        </div>
+
+        <div class="juror-count">
+          2 Jurors
+        </div>
+
+      </div>
+
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>
+                JUROR
+              </th>
+
+              <th>
+                REPUTATION
+              </th>
+
+              <th>
+                BOND
+              </th>
+
+              <th>
+                EFFECTIVE WEIGHT
+              </th>
+
+              <th>
+                VOTE
+              </th>
+
+              <th>
+                STATUS
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+            <tr>
+
+              <td>
+
+                <div class="juror">
+
+                  <div class="avatar">
+                    J1
+                  </div>
+
+                  <div>
+                    <strong>
+                      0x7099...79C8
+                    </strong>
+
+                    <small>
+                      Registered juror
+                    </small>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <strong>
+                  10,000
+                </strong>
+              </td>
+
+              <td>
+                100
+              </td>
+
+              <td>
+                <strong>
+                  100
+                </strong>
+              </td>
+
+              <td>
+                $1,000
+              </td>
+
+              <td>
+                <span class="vote-status revealed">
+                  REVEALED
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+
+                <div class="juror">
+
+                  <div class="avatar purple">
+                    J2
+                  </div>
+
+                  <div>
+                    <strong>
+                      0x3C44...293C
+                    </strong>
+
+                    <small>
+                      Registered juror
+                    </small>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <strong>
+                  10,000
+                </strong>
+              </td>
+
+              <td>
+                100
+              </td>
+
+              <td>
+                <strong>
+                  100
+                </strong>
+              </td>
+
+              <td>
+                $1,010
+              </td>
+
+              <td>
+                <span class="vote-status revealed">
+                  REVEALED
+                </span>
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <!-- ================= WEIGHT FORMULA ================= -->
+
+      <div class="weight-card">
+
+        <div class="weight-title">
+
+          <div class="formula-icon">
+            Σ
+          </div>
+
+          <div>
+
+            <h3>
+              Reputation-Weighted Resolution
+            </h3>
+
+            <p>
+              Higher effective weight gives a juror greater
+              influence on the final oracle value.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="formula">
+
+          <div class="formula-item">
+            <span>Bond</span>
+            <strong>×</strong>
+          </div>
+
+          <div class="formula-item">
+            <span>Vested Reputation</span>
+            <strong>÷</strong>
+          </div>
+
+          <div class="formula-item">
+            <span>10,000</span>
+            <strong>=</strong>
+          </div>
+
+          <div class="formula-result">
+            Effective Weight
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= ACTIONS ================= -->
+
+      <div class="action-section">
+
+        <div>
+
+          <h3>
+            Execute RWJO Flow
+          </h3>
+
+          <p>
+            Interact with the deployed smart contracts
+            on the local Anvil network.
+          </p>
+
+        </div>
+
+
+        <div class="actions">
+
+          <button
+            class="action-btn"
+            onclick="connect()"
+          >
+            <span>01</span>
+            Connect Wallet
+          </button>
+
+
+          <button
+            class="action-btn"
+            onclick="initiateDispute()"
+          >
+            <span>02</span>
+            Initiate Dispute
+          </button>
+
+
+          <button
+            class="action-btn"
+            onclick="commitVote()"
+          >
+            <span>03</span>
+            Commit Vote
+          </button>
+
+
+          <button
+            class="action-btn"
+            onclick="revealVote()"
+          >
+            <span>04</span>
+            Reveal Vote
+          </button>
+
+
+          <button
+            class="action-btn resolve-btn"
+            onclick="resolveDispute()"
+          >
+            <span>05</span>
+            Resolve Dispute
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- TRANSACTION MESSAGE -->
+
+      <div
+        id="message"
+        class="transaction-message"
+      >
+        Ready for blockchain interaction.
+      </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="panel how-panel">
+
+      <div class="section-tag">
+        PROTOCOL FLOW
+      </div>
+
+      <h2>
+        How RWJO Works
+      </h2>
+
+      <p class="section-description">
+        A dispute moves through a transparent on-chain
+        resolution process.
+      </p>
+
+
+      <div class="steps">
+
+        <div class="step">
+
+          <div class="step-number">
+            01
+          </div>
+
+          <h3>
+            Detect
+          </h3>
+
+          <p>
+            A submitted oracle value is identified as
+            potentially unreliable.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            02
+          </div>
+
+          <h3>
+            Commit
+          </h3>
+
+          <p>
+            Jurors cryptographically commit their votes
+            before seeing other votes.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            03
+          </div>
+
+          <h3>
+            Reveal
+          </h3>
+
+          <p>
+            Jurors reveal their committed prices during
+            the reveal window.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            04
+          </div>
+
+          <h3>
+            Resolve
+          </h3>
+
+          <p>
+            The protocol calculates the weighted result
+            and applies deviation protection.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SYSTEM ARCHITECTURE ================= -->
+
+    <section class="architecture">
+
+      <div class="architecture-card">
+
+        <div class="architecture-node">
+          DATA SOURCES
+        </div>
+
+        <div class="architecture-arrow">
+          ↓
+        </div>
+
+        <div class="architecture-node">
+          SOURCE RELIABILITY
+        </div>
+
+        <div class="architecture-arrow">
+          ↓
+        </div>
+
+        <div class="architecture-node">
+          TIERED RESPONSE
+        </div>
+
+        <div class="architecture-arrow">
+          ↓
+        </div>
+
+        <div class="architecture-node highlight">
+          RWJO JURY
+        </div>
+
+        <div class="architecture-arrow">
+          ↓
+        </div>
+
+        <div class="architecture-node">
+          FINAL ORACLE VALUE
+        </div>
+
+      </div>
+
+
+      <div class="architecture-text">
+
+        <div class="section-tag">
+          SYSTEM ARCHITECTURE
+        </div>
+
+        <h2>
+          From raw data to
+          <span>trusted resolution.</span>
+        </h2>
+
+        <p>
+          RWJO separates source reliability, response
+          classification and dispute resolution into
+          modular smart-contract components.
+        </p>
+
+        <div class="architecture-points">
+
+          <div>
+            <span>✓</span>
+            Reputation-weighted voting
+          </div>
+
+          <div>
+            <span>✓</span>
+            Commit-reveal protection
+          </div>
+
+          <div>
+            <span>✓</span>
+            Bond-backed jurors
+          </div>
+
+          <div>
+            <span>✓</span>
+            Deviation protection
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div>
+      RWJO
+    </div>
+
+    <span>
+      Reputation-Weighted Jury Oracle
+    </span>
+
+    <span>
+      Local Anvil Demo
+    </span>
+
+  </footer>
+
+
+  <!-- ================= LIBRARIES ================= -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js">
+  </script>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
