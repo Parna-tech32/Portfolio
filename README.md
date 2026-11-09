@@ -78,7 +78,24 @@ The work explores identifying unusual patterns in system measurements and presen
 
 [Explore Telemetry →](./Telemetry)
 
-### 4. 🧩 PCB Design
+### 4. 🎮 Wordle Plus — Daily Word Puzzle Game
+
+A Flutter-based word puzzle application that challenges users to identify a hidden word through daily gameplay.
+
+**Key features:**
+- Interactive word-guessing gameplay
+- Daily word puzzle
+- Streak tracking
+- Streak Freeze feature to protect the current streak when a daily challenge is missed or failed
+- Responsive application interface
+
+**Technologies:** Flutter · Dart · Firebase Hosting
+
+[Play Wordle Plus →](https://wordle-plus-4692a.web.app)
+
+[Explore Wordle Plus Source Code →](./wordle)
+
+### 5. 🧩 PCB Design
 
 A collection of electronics and printed circuit board design work focused on translating circuit concepts into practical hardware layouts.
 
@@ -90,7 +107,7 @@ A collection of electronics and printed circuit board design work focused on tra
 
 [Explore PCB Design →](./pcb-design)
 
-### 5. ⚙️ Motor Drivers
+### 6. ⚙️ Motor Drivers
 
 Projects involving motor-control circuits and driver systems for embedded applications.
 
@@ -102,7 +119,7 @@ Projects involving motor-control circuits and driver systems for embedded applic
 
 [Explore Motor Drivers →](./motor-drivers)
 
-### 6. 🛰️ Mechanical Structures
+### 7. 🛰️ Mechanical Structures
 
 Engineering work related to mechanical components, structural design, and hardware development.
 
@@ -114,7 +131,7 @@ Engineering work related to mechanical components, structural design, and hardwa
 
 [Explore Mechanical Structures →](./mechanical-structures)
 
-### 7. 🔩 Soldering and Hardware Assembly
+### 8. 🔩 Soldering and Hardware Assembly
 
 Practical electronics assembly and prototyping work involving component connections and hardware integration.
 
@@ -133,10 +150,10 @@ Practical electronics assembly and prototyping work involving component connecti
 
 | Category | Skills and Tools |
 |---|---|
-| Programming | C, Python, JavaScript, TypeScript |
+| Programming | C, Python, JavaScript, TypeScript, Dart |
 | Electronics | Circuit Analysis, PCB Design, Motor Drivers |
 | Embedded Systems | Arduino, Sensors, Actuators, Microcontrollers |
-| Software Development | React, Next.js, Vue.js, Tailwind CSS |
+| Software Development | React, Next.js, Vue.js, Flutter, Tailwind CSS |
 | AI and Data | Google Gemini API, Data Processing, Pattern Matching |
 | Blockchain | Solidity, Smart Contracts, Foundry |
 | Databases and Authentication | Supabase |
@@ -165,6 +182,12 @@ Portfolio/
 │   └── cryptics/
 ├── ai-travel-planner/
 ├── Telemetry/
+├── wordle/
+│   ├── lib/
+│   ├── assets/
+│   ├── android/
+│   ├── ios/
+│   └── README.md
 ├── pcb-design/
 ├── motor-drivers/
 ├── mechanical-structures/
@@ -178,4 +201,8 @@ Portfolio/
 
 ## 🌱 Learning and Development
 
-I continuously work on strengthening my foundations in electronics, embedded systems, software development, and system
+I continuously work on strengthening my foundations in electronics, embedded systems, software development, and systems engineering.
+
+Through academic projects, technical competitions, and personal projects, I aim to develop practical engineering skills and explore innovative solutions across hardware and software domains.
+
+I am particularly interested in opportunities that allow me to contribute to electronics design, embedded systems, telemetry, and space technology.
