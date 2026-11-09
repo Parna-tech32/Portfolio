@@ -1,120 +1,151 @@
 # Wordle Plus 🎮
 
-A Flutter-based word-guessing game inspired by the popular Wordle game, featuring an enhanced streak system with **Streak Freezes** to help players maintain their progress.
+A Flutter-based Wordle game inspired by the popular word-guessing puzzle. Wordle Plus challenges players to guess the daily five-letter word within a limited number of attempts while maintaining their winning streak.
 
-## 🎯 Live Demo
+## 🌐 Live Demo
 
-🔗 **Play the Game:** https://wordle-plus-4692a.web.app
+**Play Wordle Plus:** [https://wordle-plus-4692a.web.app](https://wordle-plus-4692a.web.app)
 
-## 📖 About the Project
+## 📌 About the Project
 
-Wordle Plus is an interactive word puzzle game where players attempt to guess a hidden five-letter word within a limited number of attempts. The game combines the classic Wordle-style gameplay with a unique streak protection feature, making it more engaging and forgiving for players.
+Wordle Plus is a word puzzle game developed using Flutter and Dart. Players attempt to identify a hidden five-letter word within six guesses. Each guess provides visual feedback through colored tiles to help players determine the correct letters and their positions.
 
-Unlike the traditional Wordle experience, Wordle Plus introduces **Streak Freezes**, allowing players to protect their streak when they miss a day or fail to guess the daily word.
+The game introduces a unique **Streak Freeze** feature that helps players preserve their streak even when they miss a day or fail to guess the daily word correctly.
 
 ## ✨ Features
 
-- **Daily Word Challenge:** Guess the hidden word of the day.
-- **Interactive Gameplay:** Enter five-letter words and receive feedback on each letter.
-- **Color-Coded Feedback:** Identify correct letters, misplaced letters, and incorrect letters.
-- **Streak Tracking:** Track consecutive days of successful gameplay.
-- **Streak Freeze:** Protect your streak if you miss a day or fail to guess the daily word.
-- **Responsive Interface:** Enjoy the game through a user-friendly interface.
-- **Firebase Hosting:** Access the game online without installing the application.
+- **Daily Word Challenge:** Guess the five-letter word of the day.
+- **Six Attempts:** Players get a maximum of six guesses to solve the puzzle.
+- **Color-Based Feedback:**
+  - 🟩 Green – Correct letter in the correct position.
+  - 🟨 Yellow – Correct letter in the wrong position.
+  - ⬜ Grey – Letter is not present in the word.
+- **Streak Tracking:** Track consecutive successful daily challenges.
+- **Streak Freeze:** Preserve your current streak if you miss a day or fail to guess the word of the day.
+- **Interactive Keyboard:** On-screen keyboard for entering guesses.
+- **Responsive UI:** Designed to provide a smooth gaming experience across supported devices.
+- **Flutter Cross-Platform Development:** Built using Flutter for cross-platform compatibility.
 
-## ❄️ What Makes Wordle Plus Different?
+## 🚀 Unique Feature: Streak Freeze
 
-The key feature of Wordle Plus is its **Streak Freeze mechanism**.
+Unlike the traditional Wordle game, Wordle Plus includes a Streak Freeze mechanism.
 
-In traditional Wordle-style games, missing a daily challenge or failing to solve the word can interrupt a player's streak. Wordle Plus introduces a Streak Freeze system that helps preserve the player's streak in these situations.
+The feature allows players to protect their current streak when:
+- They miss playing the game on a particular day.
+- They fail to guess the daily word correctly.
 
-This feature:
-- Protects the player's streak after missing a day.
-- Prevents the streak from breaking when the daily word is not guessed correctly.
-- Encourages consistent participation without penalizing players as harshly.
+This feature makes the game more forgiving and encourages players to continue playing without losing their accumulated progress.
 
-The feature adds a more flexible and player-friendly approach to daily word puzzles.
+## 🛠️ Technologies Used
 
-## 🛠️ Tech Stack
+| Technology | Purpose |
+|---|---|
+| Flutter | Cross-platform application development |
+| Dart | Application logic and game development |
+| Firebase Hosting | Hosting the web version of the game |
+| Supabase | Backend integration, where configured |
 
-- **Frontend:** Flutter
-- **Programming Language:** Dart
-- **Backend / Hosting:** Firebase
-- **Development Environment:** Visual Studio Code
+## 📂 Project Structure
 
-## 🚀 Getting Started
+```text
+wordle/
+│
+├── android/                  # Android platform configuration
+├── ios/                      # iOS platform configuration
+├── macos/                    # macOS platform configuration
+├── linux/                    # Linux platform configuration
+├── windows/                  # Windows platform configuration
+├── web/                      # Web application files
+│   ├── index.html
+│   ├── manifest.json
+│   └── icons/
+│
+├── assets/                   # Game assets
+│
+├── lib/                      # Main Flutter source code
+│   ├── main.dart             # Main application and game logic
+│   └── supabase_config.dart  # Supabase configuration
+│
+├── test/                     # Application tests
+│   └── widget_test.dart
+│
+├── .firebase/                # Firebase deployment configuration
+├── .gitignore                # Git ignored files
+├── firebase.json             # Firebase configuration
+├── pubspec.yaml              # Dependencies and project metadata
+├── pubspec.lock              # Locked dependency versions
+├── analysis_options.yaml      # Dart analysis configuration
+└── README.md                 # Project documentation
+```
+
+## ▶️ Running the Project Locally
 
 ### Prerequisites
 
 - Flutter SDK
 - Dart SDK
-- Visual Studio Code or Android Studio
+- Android Studio or Visual Studio Code
+- Git
 
 ### Installation
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Parna-tech32/portfolio.git
-   ```
+```bash
+git clone https://github.com/Parna-tech32/portfolio.git
+```
 
 2. Navigate to the Wordle project directory:
 
-   ```bash
-   cd portfolio/wordle
-   ```
+```bash
+cd portfolio/wordle
+```
 
 3. Install dependencies:
 
-   ```bash
-   flutter pub get
-   ```
+```bash
+flutter pub get
+```
 
 4. Run the application:
 
-   ```bash
-   flutter run
-   ```
-   
-📂 Project Structure
+```bash
+flutter run
+```
 
-wordle/
-├── lib/
-│   ├── main.dart
-│   └── supabase_config.dart
-├── assets/
-├── android/
-├── ios/
-├── web/
-├── macos/
-├── windows/
-├── linux/
-├── pubspec.yaml
-└── README.md
+### Run the Web Version
 
-## 🌐 Deployment
+```bash
+flutter run -d chrome
+```
 
-The application is deployed using Firebase Hosting.
+## 🌍 Deployment
 
-🔗 https://wordle-plus-4692a.web.app
+The web version of Wordle Plus is deployed using Firebase Hosting.
 
-## 🔮 Future Enhancements
+**Live Application:** [Play Wordle Plus](https://wordle-plus-4692a.web.app)
 
-- Multiplayer word challenges
-- Leaderboards and player rankings
-- Enhanced statistics dashboard
-- Additional themes and customization options
-- Improved streak management and rewards
+## 🎯 Future Enhancements
+
+- Daily leaderboard and player rankings.
+- Statistics dashboard for wins, losses, and guess distribution.
+- Dark mode and additional themes.
+- Improved animations and user experience.
+- Additional streak protection and game modes.
 
 ## 👩‍💻 Developer
 
 **Saptaparna Santra**
 
-GitHub: https://github.com/Parna-tech32
+B.Tech – Electrical and Computer Science Engineering  
+VIT Vellore
+
+GitHub: [Parna-tech32](https://github.com/Parna-tech32)
 
 ---
 
-*Wordle Plus — Guess the word. Keep your streak alive. Freeze your progress, not your fun!*
+⭐ If you enjoy playing Wordle Plus, check out the live game and try to maintain your streak!
+
 
 
 <img width="1440" height="810" alt="Screenshot 2026-11-09 at 9 33 12 PM" src="https://github.com/user-attachments/assets/177ec0f8-2f45-49b7-aaf2-c7627dad070a" />
