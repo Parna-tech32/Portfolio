@@ -1,208 +1,181 @@
-# ⚡ Saptaparna Santra — Engineering Portfolio
+# ⚡ Saptaparna Santra | Engineering Portfolio
 
-### Electrical & Computer Science Engineering | Embedded Systems | Electronics | AI & Software
+### Electrical & Computer Science Engineering · Electronics · Embedded Systems · Software Development
 
-Welcome to my engineering portfolio.
+Welcome to my engineering portfolio! This repository showcases my technical projects, experiments, and practical work across electronics, embedded systems, robotics, blockchain, and software development.
 
-This repository is a collection of my academic, technical, and personal projects spanning **electronics, embedded systems, PCB design, telemetry, mechanical systems, and software development**.
-
-I enjoy working at the intersection of **hardware and software**, from designing circuits and motor-control systems to developing AI-powered applications.
+I enjoy building solutions that connect hardware and software—from circuit design and telemetry systems to AI-powered applications and decentralized protocols.
 
 ---
 
 ## 👩‍💻 About Me
 
-I am an Electrical and Computer Science Engineering student at **VIT Vellore**, with a strong interest in:
+I am an Electrical and Computer Science Engineering student at VIT Vellore, interested in designing reliable, efficient, and innovative engineering systems.
 
-- 🔌 Circuit Design & Electronics
-- 🛰️ Satellite Electronics & Payload Systems
-- 📡 Telemetry & Communication Systems
-- 🤖 Embedded Systems & Robotics
-- 🧩 PCB Design
-- ⚙️ Motor Control & Drivers
-- 💻 Software & Full-Stack Development
-- 🤖 Artificial Intelligence & Generative AI
+My areas of interest include:
 
-I am particularly interested in building systems where **electronics, embedded computing, communication, and software work together**.
+- 🔌 Circuit Design and Electronics
+- 🛰️ Satellite Electronics and Payload Systems
+- 📡 Telemetry and Communication Systems
+- 🤖 Embedded Systems and Robotics
+- 🧩 PCB Design and Hardware Prototyping
+- ⛓️ Blockchain and Smart Contract Development
+- 💻 Full-Stack Development and AI Applications
 
----
-
-# 🚀 Projects
-
-## ✈️ AI Travel Planner
-
-An AI-powered travel planning web application that generates personalized travel itineraries based on a user's destination and budget.
-
-### Features
-
-- 🗺️ Destination-based trip planning
-- 💰 Budget-aware itinerary generation
-- 🤖 AI-generated travel recommendations
-- 📅 Day-by-day itinerary
-- 🍽️ Breakfast, lunch, and dinner suggestions
-- 📍 Tourist attractions and important places
-- ⏱️ Estimated visiting duration
-- 💵 Entry-fee information
-- 🗺️ Google Maps integration
-- 🔐 User authentication
-- 💾 Save trips for later
-
-### Technologies
-
-`Next.js` `React` `TypeScript` `Tailwind CSS` `Supabase` `Google Gemini API`
+I enjoy learning by building projects, testing ideas, debugging systems, and exploring how different engineering disciplines work together.
 
 ---
 
-## 📡 Telemetry
+## 🚀 Featured Projects
 
-A telemetry-focused project for collecting, processing, and analyzing system data.
+### 1. ⛓️ RWJO — Reputation-Weighted Jury Oracle
 
-The project explores telemetry data handling and anomaly detection, with emphasis on identifying unusual patterns in sensor/system measurements.
+**A decentralized oracle framework for reliable price verification, anomaly detection, and dispute resolution.**
 
-### Concepts
+RWJO explores how decentralized applications can improve the reliability of submitted price data through layered validation, source reliability assessment, and reputation-weighted jury decisions.
 
-- Telemetry data processing
+**Key areas:**
+- Multi-layer price verification
+- Source reliability evaluation
+- Tiered response and validation mechanisms
+- Reputation-weighted jury decisions
+- Smart contracts and dispute resolution
+- Frontend dashboard for interacting with the system
+
+**Technologies:** Solidity · Foundry · JavaScript · Vue.js · Smart Contracts
+
+[Explore RWJO →](./RWJO)
+
+### 2. ✈️ AI Travel Planner
+
+An AI-powered web application designed to generate personalized travel itineraries based on destination and budget.
+
+**Key features:**
+- AI-generated travel recommendations
+- Day-by-day itinerary planning
+- Tourist attractions and restaurant suggestions
+- Estimated visiting duration and entry-fee information
+- Google Maps integration
+- User authentication and saved trips
+
+**Technologies:** Next.js · React · TypeScript · Tailwind CSS · Supabase · Google Gemini API
+
+[Explore AI Travel Planner →](./ai-travel-planner)
+
+### 3. 📡 Telemetry and Anomaly Detection
+
+A project focused on telemetry data processing, pattern matching, anomaly identification, and visualization.
+
+The work explores identifying unusual patterns in system measurements and presenting telemetry information in a more understandable format.
+
+**Key areas:**
+- Telemetry data analysis
+- Pattern-matching algorithms
 - Anomaly detection
-- Pattern matching
-- Data visualization
-- System monitoring
+- Data visualization and system monitoring
 
-### Technologies
+**Technologies:** Python · Algorithms · Data Processing
 
-`Python` `Algorithms` `Data Processing` `Telemetry`
+[Explore Telemetry →](./Telemetry)
 
----
+### 4. 🧩 PCB Design
 
-## 🔧 PCB Design
+A collection of electronics and printed circuit board design work focused on translating circuit concepts into practical hardware layouts.
 
-A collection of PCB design and electronics projects developed as part of my hardware and embedded-systems work.
-
-### Focus Areas
-
-- Circuit design
-- PCB layout
+**Key areas:**
+- Circuit design and analysis
+- PCB layout and routing
 - Component selection
-- Routing
-- Hardware prototyping
-- Electronics debugging
+- Hardware prototyping and debugging
 
-### Tools
+[Explore PCB Design →](./pcb-design)
 
-`PCB Design Tools` `Circuit Design` `Electronics`
-
----
-
-## ⚙️ Motor Drivers
+### 5. ⚙️ Motor Drivers
 
 Projects involving motor-control circuits and driver systems for embedded applications.
 
-### Focus Areas
-
+**Key areas:**
 - DC motor control
-- Motor-driver circuits
-- Embedded control
+- Motor-driver interfacing
 - Direction and speed control
-- Hardware interfacing
+- Microcontroller-based hardware control
 
-### Technologies
+[Explore Motor Drivers →](./motor-drivers)
 
-`Embedded Systems` `Motor Drivers` `Microcontrollers` `Electronics`
+### 6. 🛰️ Mechanical Structures
 
----
+Engineering work related to mechanical components, structural design, and hardware development.
 
-## 🛰️ Mechanical Structures
-
-A collection of mechanical design and structural projects related to engineering systems.
-
-### Focus Areas
-
-- Structural design
-- Mechanical components
-- System integration
+**Key areas:**
+- Mechanical design
+- Structural components
+- Hardware integration
 - Engineering documentation
-- Hardware development
 
----
+[Explore Mechanical Structures →](./mechanical-structures)
 
-## 🔩 Soldering
+### 7. 🔩 Soldering and Hardware Assembly
 
-A collection of electronics assembly and soldering work.
+Practical electronics assembly and prototyping work involving component connections and hardware integration.
 
-### Skills
-
+**Key areas:**
 - Through-hole soldering
 - Component assembly
-- Wire connections
 - PCB assembly
+- Wire connections
 - Hardware troubleshooting
-- Electronics prototyping
+
+[Explore Soldering →](./soldering)
 
 ---
 
-# 🛠️ Technical Skills
+## 🛠️ Technical Skills
 
-### Programming
-
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-
-### Web & Software
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-### Embedded & Electronics
-
-- Arduino
-- Microcontrollers
-- Embedded C
-- Circuit Analysis
-- PCB Design
-- Sensors & Actuators
-- Motor Drivers
-- UART / Serial Communication
-- Telemetry Systems
-
-### Tools & Platforms
-
-- Git & GitHub
-- VS Code
-- Arduino IDE
-- Tinkercad
-- Cisco Packet Tracer
-- OpenVSP
-- Supabase
-- Google Gemini
+| Category | Skills and Tools |
+|---|---|
+| Programming | C, Python, JavaScript, TypeScript |
+| Electronics | Circuit Analysis, PCB Design, Motor Drivers |
+| Embedded Systems | Arduino, Sensors, Actuators, Microcontrollers |
+| Software Development | React, Next.js, Vue.js, Tailwind CSS |
+| AI and Data | Google Gemini API, Data Processing, Pattern Matching |
+| Blockchain | Solidity, Smart Contracts, Foundry |
+| Databases and Authentication | Supabase |
+| Engineering Tools | VS Code, Arduino IDE, Tinkercad, OpenVSP, Cisco Packet Tracer |
+| Version Control | Git, GitHub |
 
 ---
 
-# 📚 Areas of Interest
+## 🎯 Areas of Interest
+
+- **Electronics and Hardware:** Circuit development, PCB design, embedded control
+- **Communication Systems:** Telemetry, wireless communication, sensor networks
+- **Space Technology:** Satellite electronics, payload systems, mission systems
+- **Intelligent Software:** AI applications, data analysis, full-stack development
+- **Decentralized Systems:** Blockchain applications, smart contracts, oracle reliability
+
+---
+
+## 📂 Repository Structure
 
 ```text
-Electronics
-    │
-    ├── Circuit Design
-    ├── PCB Design
-    ├── Embedded Systems
-    └── Motor Control
+Portfolio/
+├── RWJO/
+│   ├── contracts/
+│   ├── frontend/
+│   └── cryptics/
+├── ai-travel-planner/
+├── Telemetry/
+├── pcb-design/
+├── motor-drivers/
+├── mechanical-structures/
+├── soldering/
+└── README.md
+```
 
-Communication
-    │
-    ├── Telemetry
-    ├── Wireless Systems
-    └── Sensor Networks
+*The folder structure may evolve as projects are updated.*
 
-Software
-    │
-    ├── Web Development
-    ├── AI / Generative AI
-    └── Data Processing
+---
 
-Space Technology
-    │
-    ├── Satellite Electronics
-    ├── Payload Systems
-    └── Mission Systems
+## 🌱 Learning and Development
+
+I continuously work on strengthening my foundations in electronics, embedded systems, software development, and system
